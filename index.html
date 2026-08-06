@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handle — username stamp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  
+  <h1>Turn your name<br>into a <span>handle.</span></h1>
+  <p class="sub">Type a name, pick a mood, and get five handles at a time. Not feeling it? Stamp out five more: as many times as you like.</p>
+
+  <div class="dock">
+    <div class="dock-input">
+      <span class="prompt">&gt;</span>
+      <input id="nameInput" type="text" placeholder="e.g. Alina Kapoor" maxlength="30" autocomplete="off">
+    </div>
+    <button id="stampBtn">Generate</button>
+  </div>
+  <div class="hint" id="hint"></div>
+
+  <div class="styles">
+    <div class="style-chip active" data-style="all">All styles</div>
+    <div class="style-chip" data-style="clean">Clean</div>
+    <div class="style-chip" data-style="gamer">Gamer</div>
+    <div class="style-chip" data-style="minimal">Minimal</div>
+    <div class="style-chip" data-style="techy">Techy</div>
+  </div>
+
+  <div class="section-label">
+    <span>Results</span>
+    <b id="countLabel"></b>
+  </div>
+
+  <div id="grid" class="grid"></div>
+
+  <div class="more-row" id="moreRow" style="display:none;">
+    <button id="moreBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+      More usernames
+    </button>
+  </div>
+
+  <footer>ALL HANDLES GENERATED LOCALLY · NOTHING LEAVES YOUR BROWSER</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
